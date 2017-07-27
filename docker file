@@ -1,0 +1,6 @@
+#this is for the jenkins
+FROM httpd
+MAINTAINER sri<sreer.mailme@gmail.com>
+RUN apt-get install apache2 -y
+EXPOSE 8080
+VOLUME ["repo1/index.html"]
