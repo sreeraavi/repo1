@@ -5,5 +5,5 @@ ENV httpd = 2.4
 RUN apt-get update -y
 RUN apt-get install apache2 -y
 CMD ["apachectl", "-D", "FOREGROUND"]
-EXPOSE 8080 80
+EXPOSE 80 8080
 VOLUME ["/var/www/html/repo1"]
